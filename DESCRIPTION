@@ -1,9 +1,22 @@
 Package: eQTLpipeline
 Title: A package to facilitate the full pipeline of cis eQTL analysis
 Version: 0.1
-Authors@R: person("Matthias", "Heinig", email = "first.last@helmholtz-muenchen.de", role = c("aut", "cre"))
-Description: A package to facilitate the full pipeline of cis eQTL analysis including permutations on a HPC cluster supported by BatchJobs
-Depends: MatrixEQTL (>= 2.1.1), data.table, BatchJobs, R (>= 3.1)
+Authors@R: c(person("Matthias", "Heinig", email = "first.last@helmholtz-muenchen.de", role = c("aut", "cre")),
+             person("Ines", "Assum", email = "first.last@helmholtz-muenchen.de", role = c("aut")))
+Description: A package to facilitate the full pipeline of cis eQTL analysis, specifically adapted for teaching purposes 
+             (original code at matthiasheinig/eQTLpipeline)
+Depends: MatrixEQTL (>= 2.1.1), 
+         data.table, 
+         R (>= 3.1),
+         ggplot2,
+         RColorBrewer,
+	 dplyr,
+         VariantAnnotation,
+         snpStats
 License: What license is it under?
 LazyData: true
 RoxygenNote: 6.1.1
+Suggest: BatchJobs,
+         qvalue,
+         peer
+         
