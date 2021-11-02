@@ -5,9 +5,11 @@ Authors@R: c(person("Matthias", "Heinig", email = "first.last@helmholtz-muenchen
              person("Ines", "Assum", email = "first.last@helmholtz-muenchen.de", role = c("aut")))
 Description: A package to facilitate the full pipeline of cis eQTL analysis, specifically adapted for teaching purposes 
              (original code at matthiasheinig/eQTLpipeline)
-Depends: MatrixEQTL (>= 2.1.1), 
+Depends: R (>= 3.1),
+	 BatchJobs
+biocViews:
+Imports: MatrixEQTL (>= 2.1.1),
          data.table, 
-         R (>= 3.1),
          ggplot2,
          RColorBrewer,
 	 dplyr,
@@ -16,7 +18,7 @@ Depends: MatrixEQTL (>= 2.1.1),
 License: What license is it under?
 LazyData: true
 RoxygenNote: 6.1.1
-Suggest: BatchJobs,
-         qvalue,
-         peer
+Suggests: BatchJobs,
+          qvalue,
+          peer
          
